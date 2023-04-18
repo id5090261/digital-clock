@@ -1,0 +1,17 @@
+$textColor: #17D4FE;
+$mainColor: #000;
+
+body {
+    background: $mainColor;
+}
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $textColor;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
+

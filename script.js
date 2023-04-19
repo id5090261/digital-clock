@@ -8,11 +8,11 @@ function showTime() {
     h = 12; // convert 0 to 12
   }
   if (h > 12) {
-    h - 12; // convert 13 to 1 and add pm
+    h = h - 12; // convert 13 to 1 and add pm
     session = "PM";
   }
   h = h < 10 ? "0" + h : h;
-  m = m < 10 ? "0" + m : m; 
+  m = m < 10 ? "0" + m : m;
   s = s < 10 ? "0" + s : s;
   var time = h + ":" + m + ":" + s + " " + session;
   document.getElementById("myClockDisplay").innerHTML = time; // add function to html
